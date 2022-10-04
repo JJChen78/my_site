@@ -1,0 +1,105 @@
+:root {
+  font-size: 10 px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Cambria;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.author {
+  position: relative;
+  color: goldenrod;
+  background-color: black;
+  top: -15px;
+}
+
+.fixedHeader {
+  display: flex;
+  position: fixed;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  list-style: none;
+  background-color: rgb(186, 187, 188);
+  padding: 5px;
+  margin: 0;
+  gap: 1.5rem;
+  font-size: 2rem;
+  font-family: monospace;
+  opacity: 0.7;
+}
+
+.fixedHeader a:hover {
+  background-color: azure;
+  opacity: 1;
+}
+.fixedHeadercomps {
+  opacity: 0.5;
+  transition: opacity 0.5s;
+}
+#currentpage {
+  opacity: 0.5;
+  transition: opacity 0.5s;
+}
+#currentpage:hover {
+  opacity: 0.1;
+}
+
+/* divion boxes with a class and interor elemtns with ther own class*/
+.gridbox {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  gap: 15rem;
+}
+
+.hide {
+  display: none;
+  position: absolute;
+  text-align: center;
+
+  padding: 0px;
+  vertical-align: middle;
+  margin: 0px;
+}
+.zzz {
+  display: none;
+  position: absolute;
+  text-align: center;
+
+  padding: 0px;
+  vertical-align: middle;
+  margin: 0px;
+}
+
+.gridelement {
+  font-size: 1.5rem;
+}
+
+.gridelement:hover + .hide {
+  display: block;
+}
+
+body {
+  display: block;
+  transition: opacity 0.5s;
+  opacity: 0.3;
+}
+
+body:hover {
+  display: block;
+  opacity: 1;
+}
+
+.test {
+  font-size: 2rem;
+}
+
+.test:hover {
+  display: block;
+  font-size: 10rem;
+}
