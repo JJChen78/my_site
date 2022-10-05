@@ -10,12 +10,29 @@ body {
 p {
   font-size: 1rem;
 }
+a:link {
+  text-decoration: none;
+}
 
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
 .author {
   position: relative;
   color: goldenrod;
   background-color: black;
   top: -15px;
+  border-radius: 5px;
+  border-style: double;
 }
 
 .fixedHeader {
@@ -30,17 +47,23 @@ p {
   gap: 1.5rem;
   font-size: 2rem;
   font-family: monospace;
-  opacity: 0.7;
+  opacity: 0.9;
+  border-radius: 5px;
+  border-style: double;
+  top: 25px;
 }
 
 .fixedHeader a:hover {
-  background-color: azure;
+  background-color: whitesmoke;
   opacity: 1;
+  border-radius: 5px;
+  border-style: double;
 }
 .fixedHeadercomps {
   opacity: 0.5;
   transition: opacity 0.5s;
 }
+
 #currentpage {
   opacity: 0.5;
   transition: opacity 0.5s;
@@ -49,7 +72,7 @@ p {
   opacity: 0.1;
 }
 
-/* divion boxes with a class and interor elemtns with ther own class*/
+/* divion boxes with a class and interor elemtns with ther own class.<a class="zzz"><img src="images/giphy.gif" /></a>*/
 .gridbox {
   display: flex;
   flex-flow: row wrap;
@@ -66,18 +89,13 @@ p {
   vertical-align: middle;
   margin: 0px;
 }
-.zzz {
-  display: none;
-  position: absolute;
-  text-align: center;
-
-  padding: 0px;
-  vertical-align: middle;
-  margin: 0px;
-}
 
 .gridelement {
   font-size: 1.5rem;
+  border-radius: 5px;
+  border-style: double;
+  background-color: bisque;
+  padding: 4px;
 }
 
 .gridelement:hover + .hide {
@@ -86,20 +104,41 @@ p {
 
 body {
   display: block;
-  transition: opacity 0.5s;
+  transition: opacity 3s;
   opacity: 0.3;
 }
 
 body:hover {
+  transition: opacity 0.5s;
   display: block;
   opacity: 1;
 }
 
 .test {
-  font-size: 2rem;
+  opacity: 0.5;
+  background-image: url("images/giphy.gif");
+  background-size: cover;
+  transition-delay: opacity 1s;
 }
 
 .test:hover {
-  display: block;
-  font-size: 10rem;
+  opacity: 1;
+  background-image: none;
+}
+
+.header {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 20px;
+}
+
+.outer {
+  display: flex;
+  justify-content: center;
+}
+.inner {
+  display: flex;
+}
+
+.item {
+  flex-grow: 1;
 }
