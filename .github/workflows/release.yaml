@@ -4,7 +4,7 @@ name: Example Release
 on:
   push:
     tags:
-      - 'release/v1'
+      - 'release/v1.0'
 
 jobs:
   build:
@@ -44,6 +44,6 @@ jobs:
           file: .github/actions/Dockerfile
           push: true
           tags: |
-            ghcr.io/${{ github.actor }}/${{ github.event.repository.name }}:latest
-            ghcr.io/${{ github.actor }}/${{ github.event.repository.name }}:${{ env.RELEASE_VERSION }}
+            ghcr.io/jjchen78/${{ github.event.repository.name }}:latest
+            ghcr.io/jjchen78/${{ github.event.repository.name }}:${{ env.RELEASE_VERSION }}
 
