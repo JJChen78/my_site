@@ -1,142 +1,191 @@
 <!DOCTYPE html>
-    <head>
-        <link rel="stylesheet" href="main.css" type="text/css"/>
-        <title>My Website</title>
-        
-    </head>
+<head>
+  <script type="text/javascript" src="index.js" defer></script>
+  <link rel="stylesheet" href="main.css" type="text/css" />
+  <title>My Website</title>
+</head>
 
-    <body  bgcolor="#FAF0E6">
-        <div class="test" >
-        <div >
-            <ul class ="fixedHeader">
-                <li ><a id="currentpage" href="index.html" >Home</a></li>
-                <li ><a class="fixedHeadercomps" href="second_page.html">About me</a></li>
-                <li ><a class="fixedHeadercomps" href="edu.html">Education</a></li>
-            </ul>
+<body bgcolor="#FAF0E6">
+  <div class="test">
+    <div>
+      <ul class="fixedHeader">
+        <li><a id="currentpage" href="index.html">Home</a></li>
+        <li>
+          <a class="fixedHeadercomps" href="second_page.html">About me</a>
+        </li>
+        <li><a class="fixedHeadercomps" href="edu.html">Education</a></li>
+      </ul>
+    </div>
+
+    <h3 class="author"><center>Made by John Chen</center></h3>
+    <br />
+
+    <div class="outer">
+      <img
+        class="item"
+        src="images/20220915_112849.jpg"
+        alt="Image of John Chen"
+        width="30%"
+        height="30%"
+      />
+      <div class="inner">
+        <div class="item1">
+          Hi, I'm John! Welcome to my first website. <br />Up to now the site
+          only uses HTML and CSS to create simple functionaly and designs.
         </div>
-        
-
-        <h3 class="author"><center>Made by John Chen</center></h3>
-        <br>
-        <div class="outer">
-            <div class="item">
-                One
+        <div class="testgrid">
+          <div class="inner2">
+            <div>
+              <h3><strong> Hobbies and interests: </strong></h3>
             </div>
-            <div class="inner">
-                <div class="circle">
-                    <div class="inner">aaa</div>
-                </div>                               
+
+            <div class="rowbox">
+              <div class="item2">Baking</div>
+              <div class="item2">Piano</div>
+              <div class="item2">Reading</div>
+              <div class="item2">Computers</div>
             </div>
-            <div class="item" >
-                Three
+          </div>
+          <div class="inner2">
+            <div>
+              <h3><strong> Things I want to do: </strong></h3>
             </div>
 
+            <div class="rowbox">
+              <div class="item2">Learn to swim</div>
+              <div class="item2">Pottery</div>
+              <div class="item2">Language classes</div>
+            </div>
+          </div>
+          <div class="inner2">
+            <div>
+              <h3><strong> Currently reading: </strong></h3>
+            </div>
 
+            <div class="rowbox">
+              <div class="item2">A memory called empire</div>
+              <div class="item2">The alignment problem</div>
+            </div>
+          </div>
+          <div class="inner2">
+            <div>
+              <h3><strong> Things I want to read: </strong></h3>
+            </div>
 
-
-
-
+            <div class="rowbox">
+              <div class="item2">Dune</div>
+              <div class="item2">Three-body problem</div>
+              <div class="item2">The precipise</div>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
+    <br />
+    <div id="test">
+      <p>
+        I am a mechatronics graduate from The University of Manchester currently
+        working in the accelerator program at THG.
+      </p>
+      <p>
+        These first couple weeks starting have been really exciting and
+        intersting. The environment and type of work has been vastly different
+        from that I was already familer with at univeristy.
+      </p>
+    </div>
+
+    <button>Button</button>
+    <div>
+      This page is a mess. Mainly used to test ideas and practise concepts.
+      <ol>
+        <strong>Ordered list of contents</strong>
+        <li>Shell</li>
+        <li>Git</li>
+        <li>Introduction to programming and Python</li>
+        <li>Intro to web development and HTML</li>
+      </ol>
+
+      <dl>
+        <strong>Unordered list of contents</strong>
+        <dt>Shell:</dt>
+        <dd>
+          Terminal usage. Navigation through directions and including making and
+          manipulating directories.
+        </dd>
+        <dt>Git:</dt>
+        <dd>
+          Save versions of files. Creating branch version of files. Uploading
+          our repositories to github
+        </dd>
+        <dt>Programming:</dt>
+        <dd>Variables, assigments, and basic functions</dd>
+        <dt>Web development:</dt>
+        <dd>Learning HTML and creating a personal website</dd>
+      </dl>
+    </div>
+
+    <div>
+      <h2 class="header">Somethings we have done:</h2>
+    </div>
+
+    <div class="gridbox">
+      <div class="gridelement">The terminal</div>
+
+      <p class="hide">
+        <img
+          src="images/Terminalicon2.png"
+          alt="Icon of the terminal in MACos"
+          width="5%"
+          height="5%"
+        />
+        <br />
+        The terminal was one of the first things we used.
+      </p>
+
+      <div class="gridelement">Git</div>
+
+      <p class="hide">
+        <img
+          src="images/Git-Icon-1788C.png"
+          alt="Git logo"
+          width="10%"
+          height="10%"
+        />
+        <br />
+        Git was used to help do source control.
+      </p>
+
+      <div class="gridelement">Python</div>
+
+      <p class="hide">
+        <img
+          src="images/Python-logo-notext.svg.png"
+          alt="Python logo"
+          width="3%"
+          height="3%"
+        /><br />Python was used to help our programming fundementals
+      </p>
+
+      <div class="gridelement">HTML</div>
+
+      <p class="hide">
+        <img
+          src="images/png-transparent-web-development-responsive-web-design-cascading-style-sheets-html-web-design-blue-web-design-text.png"
+          alt="HTML and CSS logos"
+          width="10%"
+          height="10%"
+        /><br />HTML and CSS have been used for web development
+      </p>
+    </div>
+  </div>
+</body>
+
+<!--- Accessibility issues. Background sleep screen and to an extend opacity
+    Colour contrast.
+    Low vision - related issues with the navigation bar, the fading out over the current page.
+    Better assignment of headers and paragraph. 
 
 
-
-
-
-
-
-
-
-
-
-        <div >
-            This page is a mess. Mainly used to test ideas and practise concepts.
-        <ol>
-            <br><strong>Ordered list of contents</strong></br>
-            <li>
-                Shell
-            </li>
-            <li>
-                Git
-            </li>
-            <li>
-                Introduction to programming and Python
-            </li>
-            <li>
-                Intro to web development and HTML
-            </li>
-        </ol>
-
-        <dl>
-            <br><Strong>Unordered list of contents</Strong></br>
-            <dt>Shell:</dt>
-            <dd>Terminal usage. Navigation through directions and including making and manipulating directories.</dd>
-            <dt>Git:</dt>
-            <dd>Save versions of files. Creating branch version of files. Uploading our repositories to github</dd>
-            <dt>Programming:</dt>
-            <dd>Variables, assigments, and basic functions</dd>
-            <dt>Web development:</dt>
-            <dd>Learning HTML and creating a personal website</dd>
-        </dl>
-        </div>
-        
-
-
-
-
-
-        <div>
-            <h2 class = header>Somethings we have done: </h2>
-
-        </div>
-        
-
-        <div class="gridbox">
-            <div class="gridelement">The terminal</div>
-
-            <p class="hide">
-                <img src="images/Terminalicon2.png"
-                alt="Icon of the terminal in MACos"
-                width="5%"
-                height="5%"/>
-                <br>
-                The terminal was one of the first things we used.
-            </p>
-
-
-            <div class="gridelement">Git </div>
-
-            <p class="hide">
-                <img src="images/Git-Icon-1788C.png"
-                alt="Git logo"
-                width="10%"
-                height="10%"/>
-                <br>
-                Git was used to help do source control.
-            </p>
-
-
-            <div class="gridelement">Python</div>
-
-            <p class="hide"><img src="images/Python-logo-notext.svg.png"alt="Python logo"
-                width="3%"
-                height="3%"/><br>Python was used to help our programming fundementals</p>
-
-
-            <div class="gridelement">HTML</div>
-
-            <p class="hide"><img src="images/png-transparent-web-development-responsive-web-design-cascading-style-sheets-html-web-design-blue-web-design-text.png"
-                alt="HTML and CSS logos"
-                width="10%"
-                height="10%"/><br>HTML and CSS have been used for web development</p>
-            
-        </div>
-        
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        </div>
-       
-
-
-
-    </body>
-
-    
+    Things to do:
+    Sort of the css page to have more uniform layouts and consitantx§e
+    -->
